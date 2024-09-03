@@ -11,8 +11,7 @@ def main_planner(guests: int) -> None:
     print("Tea Bags:", tea_bags(people=guests))
     print("Treats:", treats(people=guests))
     print(
-        "Cost: $",
-        cost(tea_count=tea_bags(people=guests), treat_count=treats(people=guests)),
+        f"Cost: ${cost(tea_count=tea_bags(people=guests), treat_count=treats(people=guests)):.2f}"
     )
     return None
 
@@ -28,7 +27,7 @@ def tea_bags(people: int) -> int:
 
 def treats(people: int) -> int:
     """Return the number of treats needed"""
-    return round(tea_bags(people=people) * 1.5)
+    return round(tea_bags(people) * 1.5)
 
 
 # COST which is function of tea_pags and treats
