@@ -7,14 +7,15 @@ __author__: str = "730673654"
 # don't forget that people=guests must be used
 def main_planner(guests: int) -> None:
     """Return output to the screen."""
-    print("A Cozy Tea Party for", guests, "People!")
-    print("Tea Bags:", tea_bags(people=guests))
-    print("Treats:", treats(people=guests))
+    print("A Cozy Tea Party for " + str(guests) + " People!")
+    print("Tea Bags: " + str(tea_bags(people=guests)))
+    print("Treats: " + str(treats(people=guests)))
     print(
-        "Cost: $",
-        cost(tea_count=tea_bags(people=guests), treat_count=treats(people=guests)),
+        "Cost: $"
+        + str(
+            cost(tea_count=tea_bags(people=guests), treat_count=treats(people=guests))
+        )
     )
-    return None
 
 
 # TEA BAGS -- 2 per person
