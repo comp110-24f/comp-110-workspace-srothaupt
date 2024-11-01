@@ -53,6 +53,6 @@ a_list = [1, 2, 3, 5]
 print(a_list)
 
 # print(sub(a_list, -1, 6))
-add_at_index(a_list, 4, 3)
-print(a_list)
+# add_at_index(a_list, 4, 3)
+# print(a_list)
 # print(a_list)

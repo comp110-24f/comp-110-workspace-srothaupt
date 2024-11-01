@@ -14,3 +14,7 @@ def less_than_10(num: int) -> None:
 
 
 less_than_10(num=5)
+
+diction: dict[int, str] = {0: "a", 2: "b", 1: "c"}
+for x in range(0, len(diction)):
+    print(diction[x])
